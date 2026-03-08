@@ -43,3 +43,4 @@ popd
 
 find Manapart.UnbreakableItems/Server -type f -name "*.json" -exec sed -i -E 's/"DurabilityLossOnHit":[[:space:]]*[0-9.]+/"DurabilityLossOnHit": 0/g' {} +
 find Manapart.UnbreakableItems/Server -type f -name "*.json" -exec sed -i -E 's/"AdjustHeldItemDurability":[[:space:]]*-?[0-9.]+/"AdjustHeldItemDurability": 0/g' {} +
+find Manapart.UnbreakableItems/Server -type f -name "*.json" -exec sed -i -E 's/"DurabilityLossOnUse":[[:space:]]*[0-9.]+/"DurabilityLossOnUse": 0/g' {} +
