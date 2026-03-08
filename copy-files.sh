@@ -1,5 +1,4 @@
-# UNPACKED=Hytale/unpacked/Assets
-: "${UNPACKED:?Specify unpacked directory}"
+# unpacked should have a Server/ folder
 MOD_FOLDER=Manapart.UnbreakableItems
 ITEMS=Server/Item/Items
 TOOL_FOLDER="$ITEMS/Tool"
@@ -8,8 +7,7 @@ INTERACTIONS=Server/Item/Interactions/
 INTERACTIONS_WEAPON=$INTERACTIONS/Weapons
 NEW_ROOT="$(pwd)/$MOD_FOLDER"
 
-pushd "$UNPACKED"
-  cp --parents $TOOL_FOLDER/Pickaxe/* "$NEW_ROOT"
+pushd "unpacked"
   cp --parents $TOOL_FOLDER/Pickaxe/* "$NEW_ROOT"
   cp --parents $TOOL_FOLDER/Hoe/* "$NEW_ROOT"
   cp --parents $TOOL_FOLDER/Hatchet/* "$NEW_ROOT"
