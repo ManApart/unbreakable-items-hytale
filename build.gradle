@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'dev.manapart'
+version = '1.0.0'
+
+def hytaleServerJar = file('unpacked/HytaleServer.jar')
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+dependencies {
+    compileOnly files(hytaleServerJar)
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 25
+}
+
+tasks.named('jar') {
+    archiveFileName = "manapart-unbreakable-items-${project.version}.jar"
+}

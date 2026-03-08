@@ -1,2 +1,5 @@
 Server/
 unpacked/
+build/
+.idea/
+.gradle/

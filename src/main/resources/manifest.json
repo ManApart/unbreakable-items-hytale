@@ -1,0 +1,18 @@
+{
+  "Group": "Manapart",
+  "Name": "UnbreakableItems",
+  "Version": "1.0.0",
+  "Description": "Restores damaged held and equipped items back to full durability.",
+  "Authors": [
+    {
+      "Name": "Manapart"
+    }
+  ],
+  "Website": "",
+  "ServerVersion": "2026.02.19-1a311a592",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "Main": "dev.manapart.unbreakableitems.UnbreakableItems",
+  "IncludesAssetPack": false
+}
