@@ -10,6 +10,6 @@ public class UnbreakableItems extends JavaPlugin {
 
   @Override
   protected void setup() {
-    InventoryDurabilityListener.register(getEventRegistry());
+    getEntityStoreRegistry().registerSystem(new ItemUnbreaker());
   }
 }
